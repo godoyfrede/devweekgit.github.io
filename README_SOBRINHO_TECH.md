@@ -1,53 +1,51 @@
-Sobrinho Tech é um chatbot interativo baseado em Inteligência Artificial, criado para ajudar qualquer pessoa a resolver dúvidas de tecnologia do dia a dia. O objetivo é explicar tudo de forma simples, clara e acessível, sem termos técnicos — como se fosse aquele “sobrinho da família” que entende de tecnologia!
+# Sobrinho Tech 🤖
 
-✨ Funcionalidades
+Sobrinho Tech é um chatbot baseado em Inteligência Artificial, criado para ajudar pessoas a resolverem dúvidas de tecnologia do dia a dia de maneira simples e acessível. O projeto utiliza o modelo Gemini, da Google, via biblioteca `google-genai` no Google Colab, para entregar respostas claras, passo a passo, sem termos técnicos — perfeito para leigos, idosos ou qualquer pessoa que queira descomplicar o mundo digital!
 
-Responde dúvidas sobre celulares, aplicativos, segurança digital, internet e muito mais.
+## 🚀 Como funciona?
 
-Explicações em linguagem fácil, passo a passo.
+- O chatbot responde dúvidas sobre instalação de apps, configurações básicas, uso de aplicativos populares, dicas de segurança digital e muito mais.
+- As respostas são sempre em linguagem fácil, didática, focada no público leigo.
 
-Perfeito para leigos, idosos e qualquer pessoa que queira descomplicar o digital.
+## 🛠️ Como rodar
 
-🚀 Como usar
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/seu-usuario/sobrinho-tech.git
+    ```
+2. **Abra o arquivo `chatbotsobrinhotech.py` no Google Colab** (ou suba no seu próprio Colab).
 
-Clone o repositório:
+3. **Instale a dependência:**
+    ```python
+    !pip install google-genai
+    ```
 
-git clone https://github.com/seu-usuario/sobrinho-tech.git
+4. **Configure sua API KEY do Google Gemini:**
+    - Gere uma API Key em: https://aistudio.google.com/app/apikey
+    - No Colab, adicione sua chave nas variáveis de ambiente, usando:
+      ```python
+      from google.colab import userdata
+      os.environ['GOOGLE_API_KEY'] = userdata.get('GOOGLE_API_KEY')
+      ```
+    - Ou substitua diretamente pelo valor da sua chave.
 
-Abra o projeto no Google Colab(ou rode em um ambiente Python local, se preferir).
+5. **Execute as células do notebook ou o script Python.**
 
-Instale as dependências:
+## 💡 Exemplos de perguntas
 
-!pip install google-generativeai
+- “Como baixar o WhatsApp?”
+- “Como atualizar o sistema do celular?”
+- “O que é Wi-Fi e como conectar?”
+- “Como identificar golpes no WhatsApp?”
 
-Configure a API Key do Google Gemini:
+## 🔒 Segurança
 
-Crie sua API key gratuita em: https://aistudio.google.com/app/apikey
+O Sobrinho Tech não armazena dados pessoais. Todas as respostas são geradas em tempo real via API do Google Gemini.
 
-No código, substitua SUA_API_KEY pela sua chave.
+## 📄 Licença
 
-Rode o chatbot:
+MIT License
 
-Execute as células do notebook.
+---
 
-Interaja com o Sobrinho Tech no terminal do Colab, digitando suas perguntas.
-
-💡 Exemplos de Perguntas
-
-“Como instalar o WhatsApp no meu celular?”
-
-“Como faço uma chamada de vídeo?”
-
-“Meu computador está travando, o que eu faço?”
-
-“Como criar uma senha forte?”
-
-🔒 Observação de Segurança
-
-O Sobrinho Tech não coleta nem armazena dados pessoais. Todas as conversas são processadas em tempo real pela API do Google Gemini.
-
-📜 Licença
-
-Este projeto está sob a licença MIT.
-
-Feito com 💻 e ☕ por Fred.
+*Feito com 💻 e ☕ por Fred.*
