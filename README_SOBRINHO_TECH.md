@@ -11,7 +11,7 @@ Sobrinho Tech é um chatbot baseado em Inteligência Artificial, criado para aju
 
 1. **Clone o repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/sobrinho-tech.git
+    git clone https://github.com/godoyfrede/sobrinho-tech.git
     ```
 2. **Abra o arquivo `chatbotsobrinhotech.py` no Google Colab** (ou suba no seu próprio Colab).
 
